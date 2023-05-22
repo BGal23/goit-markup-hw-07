@@ -1,4 +1,17 @@
+/*IMPORT*/
+@import 'utils/vars';
+@import 'components/header';
+@import 'components/section1';
+
 body {
-    color: red;
-    background-color: black;
+    color: $greyColor;
+    font-family: 'Roboto', sans-serif;
+    font-size: $size14;
+    font-weight: $weight400;
+    line-height: 16px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
