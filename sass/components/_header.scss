@@ -3,6 +3,7 @@ header {
     font-weight: $weight500;
     color: $blackColor;
     font-size: $size16;
+    border-bottom: 1px solid $lightColor;
 }
 
 .header {
@@ -14,54 +15,47 @@ header {
         display: flex;
         list-style-type: none;
     }
-
     &__item {
         padding: 0 23px 0;
     }
-    
     &__box--right {
         margin-left: auto;
     }
+    &__link {
+        text-decoration: none;
+        color: $blackColor;
+    
+        &:hover {
+            color: $blueColor;
+        }
+    }
+    &__link2 {
+        text-decoration: none;
+        color: $greyColor;
+        margin-right: 30px;
+        fill: $greyColor;
+    
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+        color: $blueColor;
+        fill: $blueColor;
+        }
+    }
 }
-
-.header__link {
-    text-decoration: none;
-    color: $blackColor;
-
-    &:hover {
+.header__special {
+    & a {
         color: $blueColor;
     }
-    
-}
-
-.header__link2 {
-    text-decoration: none;
-    color: $greyColor;
-    margin-right: 30px;
-    fill: $greyColor;
-
-    svg {
-        margin-right: 10px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 63px;
+        margin-top: 45px;
+        margin-left: -60px;
+        height: 4px;
+        background-color: $blueColor;
+        border-radius: 2px;
     }
-
-    &:hover {
-    color: $blueColor;
-    fill: $blueColor;
-    }
-}
-
-.header__item--special a {
-    color: $blueColor;
-}
-
-.header__logo {
-    color: $blackColor;
-    font-family: 'Raleway';
-    font-weight: $weight700;
-    font-size: $size26;
-    line-height: 1.9375rem;
-}
-
-.header__logo--blue {
-    color: $blueColor;
 }

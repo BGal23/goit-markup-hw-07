@@ -13,25 +13,23 @@
     height: 600px;
     margin: auto;
     text-align: center;
-    border-top: 1px solid $whiteColor;
-}    
 
-.section1__item {
-    max-width: 900px;
-    margin: 100px auto 0;
-}
-
-.section1__btm {
-    cursor: pointer;
-    font-weight: $weight500;
-    font-size: $size16;
-    border-radius: 4px;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.625rem;
-    background: $blueColor;
-    color: $whiteColor;
-    width: 200px;
-    min-height: 50px;
-    margin: 30px auto 100px;
+    &__item {
+        max-width: 900px;
+        margin: 100px auto 0;
+    }
+    &__btm {
+        cursor: pointer;
+        font-weight: $weight500;
+        font-size: $size16;
+        border-radius: 4px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.625rem;
+        background: $blueColor;
+        color: $whiteColor;
+        width: 200px;
+        min-height: 50px;
+        margin: 30px auto 100px;
+    }
 }
