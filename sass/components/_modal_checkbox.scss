@@ -17,6 +17,7 @@
 }
 .modal__checkbox input:hover ~ .modal__checkmark {
     background-color: $whiteColor;
+    cursor: pointer;
 }
 .modal__checkbox input:checked ~ .modal__checkmark {
     background-color: $blueColor;
